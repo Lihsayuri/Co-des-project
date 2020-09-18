@@ -8,59 +8,69 @@
         <link rel="stylesheet" href="../codigo_css/style.css">
     </head>
     
-    <body>
-        
-        <h1>
-            Escrevo logo existo
-        </h1>
+    <body classe="corpo">  
+        <header>
+            <a href="Menu_de_navegacao.html" class="redirect"> &#9776;</a>
 
-        <a href="Menu_de_navegacao.html">&#9776;Menu</a>
+            <h1 class="titulo_pag">
+                Escrevo, logo existo
+            </h1>
+        </header>
 
 
-        <h2>ROMANCE - Poesia</h2>
+        <h2 class="paragrafo">ROMANCE - Poesia</h2>
 
-        <h3>Namorados - Manuel Bandeira </h3>
+        <h3 class="paragrafo">Namorados - Manuel Bandeira </h3>
 
         <figure>
-            <img width="362" height="512" src="../fotos/Ilustracao_poema.png" alt="Ilustração do poema- Lagarta">
+            <img class="resize2" src="../fotos/Ilustracao_poema.png" alt="Ilustração do poema- Lagarta">
         </figure>
 
-        <button type="submit">
-            &#9829;
-            Add aos favoritos
-        </button>
+        <div class="like_button">
+            <button type="submit" class= "ball_button">
+                &#9829;
+            </button>
+        </div>
         
-        <pre>
-        O rapaz chegou-se para junto da moça e disse:
-        -Antônia, ainda não me acostumei com o seu corpo, com sua cara.
-        A moça olhou de lado e esperou.
-        -Você não sabe quando a gente é criança e de repente vê uma lagarta listrada?
-        A moça se lembrava:
-        -A gente fica olhando...
-        A meninice brincou de novo nos olhos dela.
-        O rapaz prosseguiu com muita doçura:
-        -Antônia, você parece uma lagarta listrada.
-        A moça arregalou os olhos, fez exclamações.
-        O rapaz concluiu:
-        -Antônia, você é engraçada! Você parece louca.
-        </pre>
+        <div class="comentar_paragrafo">
+            <pre class="normal_text">
+            O rapaz chegou-se para junto da moça e disse:
+            --Antônia, ainda não me acostumei com o seu cor-
+            po, com sua cara.
+            A moça olhou de lado e esperou.
+            --Você não sabe quando a gente é criança e de 
+            repente vê uma lagarta listrada?
+            A moça se lembrava:
+            --A gente fica olhando...
+            A meninice brincou de novo nos olhos dela.
+            O rapaz prosseguiu com muita doçura:
+            --Antônia, você parece uma lagarta listrada.
+            A moça arregalou os olhos, fez exclamações.
+            O rapaz concluiu:
+            --Antônia, você é engraçada! Você parece louca.
+            </pre>
 
+            <label class="comentar_paragrafo">Comente este parágrafo:</label>
             
-        <label>Comente este parágrafo:</label>
-            
-        <a href="Comentar_Paragrafo.html">&#119065; Comentários</a> 
+            <a href="Comentar_Paragrafo.html" class="comentar">&#119065; Comentários</a> 
+
+        </div>
+        <form>
+            <button formaction="Escrever_sinopse.html" class= "round_button"> &#43;</button>
+        </form>
 
 
         <div>
-            <h3>Avaliação</h3>
+            <h3 class="paragrafo">Avaliação</h3>
             <textarea id="escrever" name="escrever" rows="10" cols="100">
                 &#9733; &#9733; &#9733; &#9733; &#9733; Muito bom! O texto é muito bem estruturado, 
                 e que belo poema! Me fez ter nostalgia da infância, também conheci uma Antônia em 
                 minha vida :). Continue escrevendo. 
             </textarea>
+
         </div>
                 
-        <label >Faça uma avaliação:</label>
+        <label class="paragrafo">Faça uma avaliação:</label>
 
         <a href="Avaliacoes.html">Avaliar</a>
  

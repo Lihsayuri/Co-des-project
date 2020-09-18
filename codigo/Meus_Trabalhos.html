@@ -8,71 +8,75 @@
         <link rel="stylesheet" href="../codigo_css/style.css">
     </head>
     <body>
- 
-        <h1>
-            Escrevo logo existo
-        </h1>
+        <header>
+            <a href="Menu_de_navegacao.html"  class="redirect">&#9776;</a>
 
+            <h1 class="titulo_pag">
+                Meus Trabalhos
+            </h1>
+        </header>
 
-        <h2>Meus trabalhos</h2>
-
-        <a href="Menu_de_navegacao.html">&#9776;Menu</a>
-
-
-        <h3>Trabalhos passados</h3>
-
-
-        <button type="submit">
-            &#9829;
-            500 curtidas
-        </button>
-
-        <button type="submit">
-            &#9829;
-            300 curtidas
-        </button>
-
-        <button type="submit">
-            &#9829;
-            156 curtidas
-        </button>
-            
-        <figure>
-            <img width="600" height="300" src="../fotos/Meus_trabalhos1.png" alt="Meus livros">
-        </figure>
-
-        <button type="submit">
-            60 comentários
-        </button>
-
-        <button type="submit">
-            27 comentários
-        </button>
-
-        <button type="submit">
-            15 comentários
-        </button>
+        <h2 class="paragrafo">Trabalhos passados</h2>
 
         
-        <h3>Adicionar histórias</h3>
+        <div class="like_button">
+            <button type="submit" class= "ball_button">
+                &#9829;
+                50
+            </button>
 
+            <button type="submit" class= "ball_button">
+                &#9829;
+                30
+            </button>
 
-        <a href="Escrever_sinopse.html">+ Adicionar nova história</a>
-
-
-        <h3>Histórias salvas</h3>
+            <button type="submit" class= "ball_button">
+                &#9829;
+                15
+            </button>
+        </div>    
 
         <figure>
-            <img width="450" height="300" src="../fotos/Meus_trabalhos2.png" alt="livros não terminados">
+            <img  class="resize" src="../fotos/a_novata.png" alt="Meus trabalhos: a novata">
+            <img  class="resize" src="../fotos/rosa_cor_quente.png" alt="Meus trabalhos: rosa a cor mais quente">
+            <img  class="resize" src="../fotos/hist_3.png" alt="Meus trabalhos: ">
+        </figure>        
+
+        <div class="comment_button">
+            <button type="submit" class="small_button">
+                60 comentários
+            </button>
+
+            <button type="submit" class="small_button">
+                27 comentários
+            </button>
+
+            <button type="submit" class="small_button"> 
+                15 comentários
+            </button>
+        </div>
+        
+        <h2 class="paragrafo">Adicionar histórias</h2>
+
+        <form>
+            <button formaction="Escrever_sinopse.html" class= "round_button"> &#43;</button>
+        </form>
+
+        <h2 class="paragrafo">Histórias salvas</h2>
+
+        <figure>
+            <img class="resize" src="../fotos/hist_4.png" alt="livros não terminados">
+            <img class="resize" src="../fotos/meu_melhor_amigo.png" alt = "livros não terminados">
         </figure>
-            
-        <button type="submit">
-            Continuar
-        </button>
+        
+        <div class="comment_button">
+            <button type="submit" class="small_button">
+                Continuar
+            </button>
 
-        <button type="submit">
-            Continuar
-        </button>
-
+            <button type="submit" class="small_button">
+                Continuar
+            </button>
+        </div>
     </body>
 </html>

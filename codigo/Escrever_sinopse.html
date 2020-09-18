@@ -8,21 +8,20 @@
         <link rel="stylesheet" href="../codigo_css/style.css">
     </head>
     <body>
-  
-        <h1>
-            Escrevo logo existo
-        </h1>
+        <header>    
+            <h1 class="paragrafo">Temas para ler</h1>
+            
+            <a href="Menu_de_navegacao.html">&#9776;Menu</a>
+        </header>
 
-        <a href="Menu_de_navegacao.html">&#9776;Menu</a>
-
-        <h2>Adicione uma capa para a sua história</h2>
+        <h2 class="paragrafo">Adicione uma capa para a sua história</h2>
         
         <button type="submit">
             &#9776;
             Adicionar foto/ selecionar do dispositivo
         </button>
 
-        <h2>Tipos de escrita</h2>
+        <h2 class="paragrafo">Tipos de escrita</h2>
 
         <form action="/action_page.php">
             <label for="gêneros">Escolha um gênero textual:</label>
@@ -36,7 +35,7 @@
             </select>
         </form>
         
-        <h2>Temas para sua história</h2>
+        <h2 class="paragrafo">Temas para sua história</h2>
 
         <form action="/action_page.php">
             <label for="temas">Escolha um tema textual:</label>
@@ -53,14 +52,13 @@
             </select>
         </form>    
 
-        <label> Sorteie um tema textual:</label>
+        <label class="paragrafo"> Sorteie um tema textual:</label>
         
-        <button>
+        <button class="small_button">
             Sortear
         </button>
 
-
-        <h2>Sinopse</h2>
+        <h2 class="paragrafo">Sinopse</h2>
 
         <form action="/action_page.php">
             <label for="fontes">Fonte:</label>
@@ -101,7 +99,7 @@
             Sublinhar
         </button>
         
-        <h3>Escreva sua sinopse abaixo</h3>
+        <h3 class="paragrafo">Escreva sua sinopse abaixo</h3>
 
         <div>
             <textarea id="escrever" name="escrever" rows="30" cols="100">
@@ -109,10 +107,9 @@
             </textarea>
         </div>
         
-        <label>Envie sua sinopse:</label>
-        
-        <a href="Escrever_historia.html">Enviar</a>
-
+        <label class="normal_text">Envie sua sinopse:</label>
+        <form>
+            <button formaction="Escrever_histtoria.html" class= "round_button"> &#43;</button>
+        </form>
     </body>
-
 </html>

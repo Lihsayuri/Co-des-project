@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Escrever</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../codigo_css/reset.css">
+        <link rel="stylesheet" href="../codigo_css/style.css">
+    </head>
+    <body>
+  
+        <h1>
+            Escrevo logo existo
+        </h1>
+
+        <a href="Menu_de_navegacao.html">&#9776;Menu</a>
+
+        <h2>Adicione uma capa para a sua história</h2>
+        
+        <button type="submit">
+            &#9776;
+            Adicionar foto/ selecionar do dispositivo
+        </button>
+
+        <h2>Tipos de escrita</h2>
+
+        <form action="/action_page.php">
+            <label for="gêneros">Escolha um gênero textual:</label>
+            <select id="gêneros" name="gêneros">
+                <option value='selecionar gênero'>Selecionar gênero</option>      
+                <option value="conto">Conto</option>
+                <option value="crônica">Crônica</option>
+                <option value="cordel">Cordel</option>
+                <option value="novela">Novela</option>
+                <option value="...">...</option>
+            </select>
+        </form>
+        
+        <h2>Temas para sua história</h2>
+
+        <form action="/action_page.php">
+            <label for="temas">Escolha um tema textual:</label>
+            <select id="temas" name="temas">
+                <option value="selecionar temas">Selecionar tema</option>
+                <option value="comédia">Comédia</option>
+                <option value="drama">Drama</option>
+                <option value="ficção">Ficção</option>
+                <option value="infantil">Infantil</option>
+                <option value="religião">Religião</option>
+                <option value="romance">Romance</option>
+                <option value="terror">Terror</option>
+                <option value="...">...</option>
+            </select>
+        </form>    
+
+        <label> Sorteie um tema textual:</label>
+        
+        <button>
+            Sortear
+        </button>
+
+
+        <h2>Sinopse</h2>
+
+        <form action="/action_page.php">
+            <label for="fontes">Fonte:</label>
+            <select id="fontes" name="fontes">
+                <option value="selecionar fonte">Selecionar fonte</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Arial">Arial</option>
+                <option value="Comic Sans">Comic Sans</option>
+                <option value="infantil">Infantil</option>
+                <option value="...">...</option>
+            </select>
+        </form>    
+
+        <form action="/action_page.php">
+            <label for="tamanhos">Tamanho:</label>
+            <select id="tamanhos" name="tamanhos">
+                <option value="selecionar tamanho">Selecionar tamanho</option>
+                <option value="10">10</option>
+                <option value="12">12</option>
+                <option value="14">14</option>
+                <option value="16">16</option>
+                <option value="...">...</option>
+            </select>
+        </form>    
+        
+        <button type="submit">
+            &#9776;
+            Negrito
+        </button>
+        
+        <button type="submit">
+            &#9776;
+            Itálico
+        </button>
+
+        <button type="submit">
+            &#9776;
+            Sublinhar
+        </button>
+        
+        <h3>Escreva sua sinopse abaixo</h3>
+
+        <div>
+            <textarea id="escrever" name="escrever" rows="30" cols="100">
+                Comece a escrever a sua sinopse aqui. Deixa a criatividade rolar!
+            </textarea>
+        </div>
+        
+        <label>Envie sua sinopse:</label>
+        
+        <a href="Escrever_historia.html">Enviar</a>
+
+    </body>
+
+</html>

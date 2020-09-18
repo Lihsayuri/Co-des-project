@@ -4,9 +4,11 @@ figure{
 }
 
 img {
-    display: inline-flex;
-    max-width: 100%;
-    height: auto;
+    /*display: inline-flex;*/
+    /*max-width: 100%;*/
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 img.resize{
@@ -21,6 +23,16 @@ img.resize2{
     height: 40%;
 }
 
+img.resize3{
+    width: 48%;
+    height: 48%;
+}
+
+.img_link{
+    width: 100%;
+    height: 100%
+}
+
 header{
     position: relative;
     display: inline-flex;
@@ -31,6 +43,22 @@ header{
     border-bottom: 0.1rem solid black; 
     width: 100%;
 }
+
+form {
+    width: 30%;
+}
+
+pre{
+    justify-content: space-evenly;
+    font-size: 1.1rem;
+    margin: 0.5rem;
+    padding: 0.8rem;
+}
+
+label{
+    font-size: 1.5rem;
+}
+
 .corpo {
     display: flex;
     flex-direction: column;
@@ -43,6 +71,9 @@ header{
 .titulo_pag {
     font-style: italic;
     font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .titulo_return {
@@ -68,6 +99,16 @@ header{
     padding: 1rem;
 }
 
+.small_font{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
 .round_button {
     border-radius: 1rem;
     margin: 1rem; 
@@ -83,6 +124,7 @@ header{
 }
 
 .like_button {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -117,6 +159,7 @@ header{
 }
 
 .comment_button {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -139,13 +182,82 @@ header{
     padding: 0.8rem;
 }
 
-.comentar_paragrafo{
+.comentar_paragrafo {
     display:flex;
     flex-direction: row;
     
     justify-content: left;
 }
 
-.comentar{
+.comentar {
     align-self: center;
+}
+
+.form_selector {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.romance {
+    border-radius: 0.5rem;
+    margin: 1rem; 
+    padding: 1rem;
+    width: 80%;
+    font-size: 1rem;
+    text-align:center;    
+}
+
+.esquerda{
+    position: relative;
+    right: 20%;
+}
+
+.row {
+    display: flex;
+}
+
+.row_format {
+    justify-content: space-evenly;
+}
+
+.column {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: cente
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    width: 50%;
+    height: 50%
+  }
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.text_edit_elemts{
+width: 15%;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 0.5rem;
+}
+
+.text_buttons {
+    border-radius: 0.5rem;
+    width: 15%;
+    height: 100%;
+    margin: 0.5rem; 
+    padding: 0.5rem;
+    font-size: 0.5rem;
+    text-align:center;    
 }

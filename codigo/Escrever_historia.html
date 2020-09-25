@@ -6,77 +6,86 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../codigo_css/reset.css">
         <link rel="stylesheet" href="../codigo_css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Grenze:wght@600&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body class="corpo">
         <header>    
-            <h1 class="paragrafo">Temas para ler</h1>
-            
-            <a href="Menu_de_navegacao.html">&#9776;Menu</a>
+            <a class="redirect" href="Menu_de_navegacao.html">&#9776;</a>
+            <h1 class="titulo_pag">Hora de escrever</h1>
         </header>
        
-        <h2 class="paragrafo">Contos: Romance</h2>
+        <h2 class="titulo_pag">Contos: Romance</h2>
 
         <h3 class="paragrafo">Escreve sua história abaixo</h3>
 
-        <form action="/action_page.php">
-            <label for="fontes">Fonte:</label>
-            <select id="fontes" name="fontes">
-                <option value="selecionar fonte">Selecionar fonte</option>
-                <option value="Times New Roman">Times New Roman</option>
-                <option value="Arial">Arial</option>
-                <option value="Comic Sans">Comic Sans</option>
-                <option value="infantil">Infantil</option>
-                <option value="...">...</option>
-            </select>
-        </form>    
+        <div class="row">
+            <form class="text_edit_elemts" action="/action_page.php">
+                <label class="small_font button_title_row" for="fontes">Fonte:</label>
+                <select id="fontes" name="fontes">
+                    <option value="selecionar fonte">Selecionar</option>
+                    <option value="Calibri">Calibri</option>
+                    <option value="Arial">Arial</option>
+                    <option value="Comic Sans">Comic Sans</option>
+                    <option value="infantil">Infantil</option>
+                    <option value="...">...</option>
+                </select>
+            </form>    
 
-        <form action="/action_page.php">
-            <label for="tamanhos">Tamanho:</label>
-            <select id="tamanhos" name="tamanhos">
-                <option value="selecionar tamanho">Selecionar tamanho</option>
-                <option value="10">10</option>
-                <option value="12">12</option>
-                <option value="14">14</option>
-                <option value="16">16</option>
-                <option value="...">...</option>
-            </select>
-        </form>    
+            <form class="text_edit_elemts" action="/action_page.php">
+                <label class="small_font button_title_row" for="tamanhos">Tamanho:</label>
+                <select id="tamanhos" name="tamanhos">
+                    <option value="selecionar tamanho">Selecionar</option>
+                    <option value="10">10</option>
+                    <option value="12">12</option>
+                    <option value="14">14</option>
+                    <option value="16">16</option>
+                    <option value="...">...</option>
+                </select>
+            </form> 
+        </div>   
         
-        <button type="submit">
-            &#9776;
-            Negrito
-        </button>
-        
-        <button type="submit">
-            &#9776;
-            Itálico
-        </button>
+        <div class="row2">
+            <button class="text_edit_button" type="submit">
+                &#9776;
+                &#78;
+            </button>
+            
+            <button class="text_edit_button" type="submit">
+                &#9776;
+                &#73;
+            </button>
 
-        <button type="submit">
-            &#9776;
-            Sublinhar
-        </button>
-        
-        <textarea id="título" name="título" rows="1" cols="70">
+            <button class="text_edit_button" type="submit">
+                &#9776;
+                &#83;
+            </button>
+        </div>
+
+        <textarea class="textarea_title" id="título" name="título" rows="1" cols="33">
             Escreva um título
         </textarea>
                     
-        <div>
-            <textarea id="escrever" name="escrever" rows="200" cols="120">
-                Comece a escrever a sua história aqui. Era uma vez...
-            </textarea>
-        </div>
+
+        <textarea class="textarea_story" id="escrever" name="escrever" rows="60" cols="40">
+            Comece a escrever a sua história aqui. Era uma vez...
+        </textarea>
+
                 
         
-        <label>Envie seu capítulo:</label>
+        <label class="paragrafo">Envie seu capítulo:</label>
         
-        <a href="Meus_Trabalhos.html">Enviar</a>
+        <form >
+            <button formaction="Meus_Trabalhos.html" class= "round_button">Enviar</button>
+        </form> 
 
-        <label>Salve sua história:</label>
+        <label class="paragrafo">Salve sua história:</label>
         
-        <button>
-            Salvar
-        </button>
+        <form>
+            <button class="round_button">
+                Salvar
+            </button>
+        </form>
                 
     </body>
 </html>

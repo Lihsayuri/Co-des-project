@@ -6,30 +6,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../codigo_css/reset.css">
         <link rel="stylesheet" href="../codigo_css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Grenze:wght@600&display=swap" rel="stylesheet">
     </head>
     <body class="corpo">
         <header>    
             <a class="redirect" href="Menu_de_navegacao.html">&#9776;</a>
-            <h1 class="titulo_pag">Temas para ler</h1>
+            <h1 class="titulo_pag">Comece escrever</h1>
             
         </header>
         <div class="row">
-            <div class="column">
+            <div class="column_button">
 
-                <h2 class="paragrafo">Adicione uma capa para a sua história</h2>
+                <p class="paragrafo">Adicione uma capa</p>
 
                 <button class="round_button" type="submit">
-                    &#9776;
-                    Adicionar foto/ selecionar do dispositivo
+                
+                    Adicionar foto
                 </button>
                 </div>
 
-            <div class="column">
+            <div class="column_button">
 
-                <h2 class="paragrafo">Tipos de escrita</h2>
+                <p class="paragrafo">Tipos de escrita</p>
 
                 <form class="form_selector" action="/action_page.php">
-                    <label for="gêneros">Escolha um gênero textual:</label>
                     <select class="round_button" id="gêneros" name="gêneros">
                         <option value='selecionar gênero'>Selecionar gênero</option>      
                         <option value="conto">Conto</option>
@@ -44,10 +45,9 @@
 
         </div>
 
-        <h2 class="paragrafo">Temas para sua história</h2>
+        <p class="paragrafo">Temas para sua história</p>
 
         <form class="form_selector" action="/action_page.php">
-            <label for="temas">Escolha um tema textual:</label>
             <select class="round_button" id="temas" name="temas">
                 <option value="selecionar temas">Selecionar tema</option>
                 <option value="comédia">Comédia</option>
@@ -67,14 +67,14 @@
             Sortear
         </button>
 
-        <h2 class="paragrafo">Sinopse</h2>
+        <p class="subtitle">Sinopse</p>
 
-        <div class="row row_format">
+        <div class="row">
             <form class="text_edit_elemts" action="/action_page.php">
-                <label class="small_font" for="fontes">Fonte:</label>
+                <label class="small_font button_title_row" for="fontes">Fonte:</label>
                 <select id="fontes" name="fontes">
-                    <option value="selecionar fonte">Selecionar fonte</option>
-                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="selecionar fonte">Selecionar</option>
+                    <option value="Calibri">Calibri</option>
                     <option value="Arial">Arial</option>
                     <option value="Comic Sans">Comic Sans</option>
                     <option value="infantil">Infantil</option>
@@ -83,43 +83,46 @@
             </form>    
 
             <form class="text_edit_elemts" action="/action_page.php">
-                <label class="small_font" for="tamanhos">Tamanho:</label>
+                <label class="small_font button_title_row" for="tamanhos">Tamanho:</label>
                 <select id="tamanhos" name="tamanhos">
-                    <option value="selecionar tamanho">Selecionar tamanho</option>
+                    <option value="selecionar tamanho">Selecionar</option>
                     <option value="10">10</option>
                     <option value="12">12</option>
                     <option value="14">14</option>
                     <option value="16">16</option>
                     <option value="...">...</option>
                 </select>
-            </form>    
-            
-            <button type="submit" class="text_buttons">
+            </form>
+        </div>        
+           
+        <div class="row2">
+            <button class="text_edit_button" type="submit">
                 &#9776;
-                Negrito
+                &#78;
             </button>
             
-            <button type="submit" class="text_buttons">
+            <button class="text_edit_button" type="submit">
                 &#9776;
-                Itálico
+                &#73;
+            </button>    
+
+            <button class="text_edit_button" type="submit">
+                &#9776;
+                &#83;
             </button>
 
-            <button type="submit" class="text_buttons">
-                &#9776;
-                Sublinhar
-            </button>
-        </div>
-        <h3 class="paragrafo">Escreva sua sinopse abaixo</h3>
-
-        <div>
-            <textarea id="escrever" name="escrever" rows="20" cols="50">
-                Comece a escrever a sua sinopse aqui. Deixa a criatividade rolar!
-            </textarea>
         </div>
         
-        <label class="normal_text">Envie sua sinopse:</label>
+        <h3 class="paragrafo">Escreva sua sinopse abaixo</h3>
+
+
+        <textarea class="textarea_sinopse" id="escrever" name="escrever" rows="20" cols="50">
+            Comece a escrever a sua sinopse aqui. Deixa a criatividade rolar!
+        </textarea>
+
+        <label class="paragrafo">Envie sua sinopse:</label>
         <form>
-            <button formaction="Escrever_histtoria.html" class= "round_button"> &#43;</button>
+            <button formaction="Escrever_historia.html" class= "round_button"> &#43;</button>
         </form>
     </body>
 </html>

@@ -7,23 +7,54 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../codigo_css/reset.css">
         <link rel="stylesheet" href="../codigo_css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Grenze:wght@600&display=swap" rel="stylesheet">
     </head>
 
-    <body>
-        <h1>
-            Avaliação
-        </h1>
-        
-        <h2>
+    <body class="corpo">
+        <header>
+            <a href="Ler.html" class="redirect">&#11148;</a>
+            <h1 class="titulo_pag">
+                AVALIAÇÃO
+            </h1>
+        </header>
+
+        <h2 class="subtitle">
             Avalie o texto!
         </h2>
-        
-        <label for="avaliacao"> Escreva seus comentários</label><br>
-        <textarea id="avaliacao" name="avaliacao" rows="4" cols="50"></textarea>
-        <p>&#9733; &#9733; &#9733; &#9733; &#9733;</p>
-        <input type="submit" value="submit"> 
-        
-        <a href="Ler.html">Voltar</a>
+
+
+        <div class="avaliacao_estrela">
+            <button class="small_button">
+                &#9733; 
+            </button>
+
+            <button class="small_button">
+                &#9733;&#9733;
+            </button>            
             
+            <button class="small_button">
+                &#9733; &#9733; &#9733;
+            </button>
+        </div>
+
+        <div class="avaliacao_estrela">
+            <button class="small_button">
+                &#9733; &#9733; &#9733; &#9733;
+            </button>
+
+            <button class="small_button">
+                &#9733; &#9733; &#9733;&#9733; &#9733; 
+            </button>
+        </div>
+
+        <label class="paragrafo" for="avaliacao"> Escreva seus comentários</label>
+        <textarea class="textarea_comment" id="avaliacao" name="avaliacao" rows="10" cols="50"></textarea>
+
+        <label class="paragrafo">Clique para enviar</label>
+        <button class="small_button">
+            Enviar
+        </button>
+
     </body>
 </html>
